@@ -1,0 +1,1 @@
+{"columns":["unit","totmedamt","totrxamt"],"sort":[{"field":"unit","order":"ASC"}],"filters":{"columnFilters":[],"businessLevels":{},"analysisPeriod":{"period":"FULL_CYCLE","periodOverPeriod":false,"args":[],"type":"INCURRED_DATE","defaultTrendPeriod":"F"}},"page":{"size":50,"offset":1}}
