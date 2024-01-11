@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { TestComponent } from './test/test.component';
 import { FoodComponent } from './food/food.component';
 import { FoodModule } from './food/food.module';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FoodModule } from './food/food.module';
     EffectsModule.forRoot(rootEffects),
     ApiModule,
     CommonModule,
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
 
   ],
   providers: [FoodService],
