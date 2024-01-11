@@ -1,3 +1,4 @@
+import * as fromCar from '../car/car.state';
 import * as fromFood from '../food';
 
 /**
@@ -5,4 +6,5 @@ import * as fromFood from '../food';
  */
 export interface State {
   food: fromFood.State;
+  car: fromCar.State
 }

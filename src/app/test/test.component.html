@@ -1,2 +1,8 @@
 <p>{{count | async}}</p>
+
+<input type="text" #carName>
+<button (click)="setCar(carName)">Set Car</button>
+
+<p>{{ (getCar() | async)?.name }}</p>
+<br>
 <a routerLink="/food">Go to food route</a>
