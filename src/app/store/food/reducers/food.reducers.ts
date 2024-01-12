@@ -11,7 +11,8 @@ export const foodReducer = createReducer(
   on(foodActions.createFood, (state, { payload }) => ({
     ...state,
     foods: [...state.foods, { ...payload, id: toInteger(uniqueId()) }]
-  })),
+  })
+  ),
 
   on(foodActions.createFoodSuccess, (state, { payload }) => ({
     ...state,

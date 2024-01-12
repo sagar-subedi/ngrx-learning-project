@@ -26,3 +26,6 @@ export class FoodEffects {
     )
   );
 }
+
+
+//for actions of type createFood, makes api call with the payload and dispatches new action of type, 'create food success'
